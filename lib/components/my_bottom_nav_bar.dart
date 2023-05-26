@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';//essas duas primeiras linhas importam os pacotes necessários para utilizar os widgets do Flutter e para exibir imagens SVG.
 import 'package:flutter_svg/flutter_svg.dart';
-
+//
 import '../constants.dart';//importa o arquivo "constants.dart" que contém definições de constantes adicionais(cores e valores de estilo).
 
 class MyBottomNavBar extends StatelessWidget {//Essa classe é definida como uma classe de widget "Stateless". Ela estende a classe StatelessWidget, que é fornecida pelo Flutter.

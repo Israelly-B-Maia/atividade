@@ -89,7 +89,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                         enabledBorder: InputBorder.none, // Remove a borda quando o TextField não está focado
                         focusedBorder: InputBorder.none,// Remove a borda quando o TextField está focado
                         // surffix isn't working properly  with SVG
-                        // thats why we use row
+
                         // suffixIcon: SvgPicture.asset("assets/icons/search.svg"),// Define um ícone 
                       ),
                     ),

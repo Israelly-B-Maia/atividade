@@ -56,7 +56,7 @@ class TitleWithCustomUnderline extends StatelessWidget { // Declaração da clas
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold), // Define o estilo do texto do título
             ),
           ),
-          Positioned( // Widget Positioned para posicionar o contêiner de sublinhado
+          Positioned(// Widget Positioned para posicionar o contêiner de sublinhado
             bottom: 0, // Posiciona o contêiner na parte inferior
             left: 0, // Posiciona o contêiner à esquerda
             right: 0, // Posiciona o contêiner à direita

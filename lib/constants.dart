@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';//importa o pacote flutter/material.dart,
 
 // Colors that we use in our app
 //definem as cores usadas no aplicativo. Essas constantes são definidas como instâncias da classe Color, que é fornecida pelo Flutter. 
-const kPrimaryColor = Color(0xFF0C9869);
+const kPrimaryColor = Color(0xFF0C9869);//
 const kTextColor = Color(0xFF3C4046);
 const kBackgroundColor = Color(0xFFF9F8FD);
 

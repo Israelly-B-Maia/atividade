@@ -43,7 +43,7 @@ class FeaturePlantCard extends StatelessWidget {//define a classe chamada Featur
       onTap: press,  // Define a função a ser executada quando o cartão for pressionado
       child: Container(  // Widget de container
         margin: EdgeInsets.only(  // Define as margens do container
-          left: kDefaultPadding,
+          left: kDefaultPadding,//para a esquer
           top: kDefaultPadding / 2,
           bottom: kDefaultPadding / 2,
         ),

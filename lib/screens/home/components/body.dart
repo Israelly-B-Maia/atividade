@@ -16,7 +16,7 @@ class Body extends StatelessWidget {//a Body é uma subclasse da super classe St
     return SingleChildScrollView(  // Widget que permite a rolagem em dispositivos pequenos
       child: Column(  // Widget que organiza seus filhos em uma coluna vertical
         crossAxisAlignment: CrossAxisAlignment.start,  // Alinha os filhos à esquerda
-        children: <Widget>[
+        children: <Widget>[//
           HeaderWithSearchBox(size: size),  // Widget de cabeçalho com caixa de pesquisa
           TitleWithMoreBtn(title: "Recomended", press: () {}),  // Widget de título com botão "More"
           RecomendsPlants(),  // Widget de plantas recomendadas

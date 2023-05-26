@@ -6,7 +6,7 @@ import 'package:plant_app/constants.dart';//importa o arquivo "constants.dart" q
 import 'image_and_icons.dart';// Importa o arquivo image_and_icons.dart
 import 'title_and_price.dart';// Importa o arquivo title_and_price.dart
 
-
+//
 class Body extends StatelessWidget {//a Body é uma subclasse da super classe StatelessWidget
   @override
   Widget build(BuildContext context) {//O método build é sobrescrito para construir a interface do usuário da classe Body e ele recebe um parâmetro context, que é usado para acessar informações do contexto atual, como o tamanho da tela (Size) através do MediaQuery.of(context).size.

@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget { //aqui começa a definição da classe MyA
       title: 'Plant App', // define o título do aplicativo.
       theme: ThemeData( // define o tema do aplicativo, especificando várias propriedades visuais e de estilo.
         scaffoldBackgroundColor: kBackgroundColor, // a cor de fundo do aplicativo é definida como kBackgroundColor
-        primaryColor: kPrimaryColor,
+        primaryColor: kPrimaryColor,//
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor), // o estilo do texto do aplicativo é definido com base no tema atual do contexto. 
         visualDensity: VisualDensity.adaptivePlatformDensity, //define a densidade visual do aplicativo como uma densidade adaptativa de plataforma.
       ),

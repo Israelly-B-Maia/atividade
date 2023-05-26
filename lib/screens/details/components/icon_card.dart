@@ -11,7 +11,7 @@ class IconCard extends StatelessWidget {//A classe IconCard herda de StatelessWi
     this.icon,
   }) : super(key: key);
 
-  final String icon;
+  final String icon;//
 
   @override
   Widget build(BuildContext context) {//esse é um metodo sobrescrito para construir a interface do usuário da classe IconCard. 

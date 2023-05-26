@@ -11,7 +11,7 @@ class ImageAndIcons extends StatelessWidget {//A classe IconCard herda de Statel
   }) : super(key: key);
 
   final Size size;
-
+//
   @override
   Widget build(BuildContext context) {//O método build é sobrescrito para construir a interface do usuário da classe ImageAndIcons.
     return Padding( // Widget que adiciona preenchimento ao redor de seu filho

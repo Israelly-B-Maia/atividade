@@ -6,7 +6,7 @@ class DetailsScreen extends StatelessWidget {//essa classe é definida como uma 
   @override
   Widget build(BuildContext context) {//esse método é sobrescrito para construir a interface de usuário do widget e esse metodo recebe um parâmetro BuildContext que fornece acesso ao contexto do widget.
     return Scaffold(//estrutura básica para a tela
-      body: Body(),
+      body: Body(),//
     );
   }
 }

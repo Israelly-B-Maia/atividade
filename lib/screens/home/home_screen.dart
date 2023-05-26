@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {//Essa classe é definida como uma cla
   Widget build(BuildContext context) {
     return Scaffold(  // Define a estrutura básica da tela
       appBar: buildAppBar(),  // Define a barra de aplicativo
-      body: Body(),  // Define o corpo da tela
+      body: Body(),  //Define o corpo da tela
       bottomNavigationBar: MyBottomNavBar(),  // Define a barra de navegação inferior
     );
   }

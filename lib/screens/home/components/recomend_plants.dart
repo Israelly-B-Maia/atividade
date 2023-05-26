@@ -122,7 +122,7 @@ class RecomendPlantCard extends StatelessWidget { // Declaração da classe Reco
                     '\$$price', // Exibe o preço do cartão
                     style: Theme.of(context)
                         .textTheme
-                        .button
+                        .button//
                         .copyWith(color: kPrimaryColor), // Define o estilo do texto do preço
                   )
                 ],
