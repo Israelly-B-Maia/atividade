@@ -14,7 +14,8 @@ class HeaderWithSearchBox extends StatelessWidget {
   final Size size;
 
   @override
-  // O método build é sobrescrito para construir a interface do usuário para esse widget. Ele recebe o parâmetro BuildContext context que é usado para acessar o contexto atual.
+  // O método build é sobrescrito para construir a interface do usuário para esse widget.
+  // Ele recebe o parâmetro BuildContext context que é usado para acessar o contexto atual.
   Widget build(BuildContext context) {
     // é criado um widget Container que representa o cabeçalho com a caixa de pesquisa.
     return Container(
@@ -26,7 +27,8 @@ class HeaderWithSearchBox extends StatelessWidget {
         // Dentro do Stack, é adicionado um Container que representa a parte superior do cabeçalho.
         children: <Widget>[
           Container(
-            // O Container possui um preenchimento interno definido pela propriedade padding, com espaços à esquerda e à direita definidos por kDefaultPadding e na parte inferior com 36 + kDefaultPadding.
+            // O Container possui um preenchimento interno definido pela propriedade padding,
+            // com espaços à esquerda e à direita definidos por kDefaultPadding e na parte inferior com 36 + kDefaultPadding.
             padding: EdgeInsets.only(
               left: kDefaultPadding,
               right: kDefaultPadding,
@@ -35,7 +37,7 @@ class HeaderWithSearchBox extends StatelessWidget {
             // A propriedade height define a altura do container, subtraindo 27 para acomodar o espaço ocupado pelo texto e imagem do cabeçalho.
             height: size.height * 0.2 - 27,
             decoration: BoxDecoration(
-              // O Container possui uma decoração com cor de fundo definida por kPrimaryColor (uma constante importada), e bordas arredondadas na parte inferior esquerda e inferior direita.
+              // O Container possui uma decoração com cor de fundo definida por kPrimaryColor (uma constante importada),e bordas arredondadas na parte inferior esquerda e inferior direita.
               color: kPrimaryColor,
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(36),
@@ -50,49 +52,49 @@ class HeaderWithSearchBox extends StatelessWidget {
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 Spacer(),
-                Image.asset("assets/images/logo.png")
+                Image.asset("assets/images/logo.png")//a imagem
               ],
             ),
           ),
-          Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-              padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-              height: 54,
+          Positioned(//posiciona um container na parte inferior da tela
+            bottom: 0,//definiição para os valores
+            left: 0,//posiciona na esquerda
+            right: 0,//na direita
+            child: Container(//para criar uma tela de pesquisa personalisada
+              alignment: Alignment.center,//centralizar o alinhamento
+              margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),//personaliza a mergem
+              padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),//o preenchimento
+              height: 54,//ele define a autura q ele quer
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
+                color: Colors.white,//a cor q será usada
+                borderRadius: BorderRadius.circular(20),//outra borda circular
                 boxShadow: [
-                  BoxShadow(
+                  BoxShadow(// Adiciona uma sombra ao Container
                     offset: Offset(0, 10),
                     blurRadius: 50,
-                    color: kPrimaryColor.withOpacity(0.23),
+                    color: kPrimaryColor.withOpacity(0.23),// cor navamente
                   ),
                 ],
               ),
-              child: Row(
+              child: Row(// Widget Row permite organizar os filhos em uma linha horizontal
                 children: <Widget>[
-                  Expanded(
-                    child: TextField(
-                      onChanged: (value) {},
+                  Expanded(// Widget Expanded permite que o filho preencha todo o espaço disponível
+                    child: TextField(// Widget TextField é usado para entrada de texto
+                      onChanged: (value) {},// Define uma função de retorno de chamada que será chamada quando o texto for alterado
                       decoration: InputDecoration(
-                        hintText: "Search",
+                        hintText: "Search",// Define um texto de dica para a entrada de texto
                         hintStyle: TextStyle(
-                          color: kPrimaryColor.withOpacity(0.5),
+                          color: kPrimaryColor.withOpacity(0.5),// Define a cor da dica com base em uma cor primária com opacidade reduzida
                         ),
-                        enabledBorder: InputBorder.none,
-                        focusedBorder: InputBorder.none,
+                        enabledBorder: InputBorder.none, // Remove a borda quando o TextField não está focado
+                        focusedBorder: InputBorder.none,// Remove a borda quando o TextField está focado
                         // surffix isn't working properly  with SVG
                         // thats why we use row
-                        // suffixIcon: SvgPicture.asset("assets/icons/search.svg"),
+                        // suffixIcon: SvgPicture.asset("assets/icons/search.svg"),// Define um ícone 
                       ),
                     ),
                   ),
-                  SvgPicture.asset("assets/icons/search.svg"),
+                  SvgPicture.asset("assets/icons/search.svg"),// Define um ícone
                 ],
               ),
             ),
